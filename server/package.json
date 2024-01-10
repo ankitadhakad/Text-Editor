@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "client-install": "cd client && npm install",
+    "client-build": "cd client npm sun build",
+    "heroku-postbuild": "npm run client-install && npm run client-build"
+  },
+  "author": "Ankita Dhakad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "mongoose": "^8.0.4",
+    "nodemon": "^3.0.2",
+    "socket.io": "^4.7.3"
+  }
+}
